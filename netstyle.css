@@ -1,0 +1,23 @@
+@media (max-width: 768px){
+    
+}
+
+div {
+    border: 1px solid black;
+    padding: 30px;
+    margin: auto;
+    cursor: pointer;}
+
+.container-flex {
+    display: flex;
+background-color: black;
+color: blanchedalmond;
+font-family: sans-serif;
+padding: 100px;
+}
+
+
+.item1 {
+    font-size: 20px;
+    
+}
