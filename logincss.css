@@ -12,20 +12,12 @@
     padding: 0;
     font-family: "bebas-neue";
     font-size: 14px;
-    box-sizing: border-box;
 }
 
 /* Div totale di tutto il footer */
 #bigdiv {
     padding: 20px;
 }
-
-/* Margin e padding totali */
-
-/* .container {
-    margin: 5px;
-    padding: 10px;
-} */
 
 /* Impostazioni dimensioni e colore testo dei div */
 
@@ -36,15 +28,12 @@
 
 /* Paragrafi e div del grid */
 
-#pfooter1, #pfooter2 {
+.pfooter {
     color: gray;
     margin: 5px;
     padding: 5px;
     margin-top: 15px;
-    margin-left: 133px;
-    height: auto;
-    width: 280px;
-    justify-self: center;
+    margin-left: 125px;
 }
 
 /* .pfooter>#pfooter1 {
@@ -53,16 +42,32 @@
 
 #pfooter1 {
     font-size: 1.2em;
-    width: 270px;
+    width: 260px;
 }
 
-#dfooter {
+.dfooter {
     height: auto;
     width: 180px;
     color: gray;
     margin: 5px;
     padding: 5px;
     margin-right: 40px;
+    justify-self: center;
+}
+
+.dfooter {
+    height: auto;
+    width: 180px;
+    color: gray;
+    margin: 5px;
+    padding: 5px;
+    margin-right: 40px;
+    justify-self: center;
+}
+
+.pdivs {
+    height: auto;
+    width: 280px;
     justify-self: center;
 }
 
@@ -74,15 +79,15 @@
 }
 
 #language {
-    background-color:black;
+    background-color: black;
     color: gray;
     height: 45px;
-    width: 130px;
+    width: 125px;
     background-image: url(./Schermata\ 2022-06-09\ alle\ 10.12.39.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
-    margin-left: 120px;
+    margin-left: 130px;
 }
 
 #lang-1, #lang-2 {
@@ -90,33 +95,31 @@
     justify-items: right;
 }
 
-
 /* Disposizione del grid */ 
 
-#div-menu-grid {
+#container {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
     grid-template-columns: 1fr 1fr 1fr auto;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     margin-left: 65px;
     margin-right: 65px;
-
 }
 
 /* Sistemazione stile dei link */
 
-#dfooter>a:link {
+.dfooter>a:link {
     text-decoration: none;
     color: gray;
 }
 
-#dfooter>a:active, .dfooter>a:visited, .dfooter>a:focus {
+.dfooter>a:active, .dfooter>a:visited, .dfooter>a:focus {
     text-decoration: none;
     color: gray;
 }
 
-#dfooter>a:hover {
+.dfooter>a:hover {
     text-decoration: underline;
     color: gray;
 }
