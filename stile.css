@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(61, 61, 61);
+    color:white;
+    font-family: "Arial";
+}
+
+div {
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+.inline {
+   display: inline;
+  text-align: center;
+}
