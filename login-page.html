@@ -6,35 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix login</title>
+    <link rel="stylesheet" href="netstyle.css">
+
 </head>
 
-<body>
-    <center>
-        <article>
-            <form action="sign">
-                <h2>Sign In</h2>
-                <div>
-                    <input type="email" id="user" placeholder="Email or phone number"
-                        title="Please enter a valid email or phone number." required> <br>
-                    
 
-                   <br> <input type="password" id="key" placeholder="Password" pattern=".{4,60}"
-                        title="Your password must contain between 4 and 60 characters." required> <br>
+<body class="page-background">
 
-                   <br> <button class="send" id="send">Sign In</button><br>
-                   
-                   <input type="checkbox" id="check">
-                   <label for="check">Remember me</label>
-                   <span><a href="https://www.netflix.com/it-en/LoginHelp">Need help?</a></span>
-                </div>
-                <div>
-                    <h5>Need an help? <a href="">Sign up now</a></h5>
-                    <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="">Learn more.</a></p>
-                </div>
-            </form>
+    <header class="header">
+        <div class="ball">
+            <a href="#"><img src="./img/netflix-logo-0.png" id="logo" alt="netflix logo"></a>
+        </div>
+    </header>
 
-        </article>
-    </center>
+    <form class="form">
+        <div class="title">
+            <h1>Sign In</h1>
+        </div>
+        <div class="input">
+            <input type="email" class="utente" id="user" placeholder="Email or phone number"
+                title="Please enter a valid email or phone number." required> <br>
+
+
+            <br> <input type="password" class="psw" id="key" placeholder="Password" pattern=".{4,60}"
+                title="Your password must contain between 4 and 60 characters." required> <br>
+
+            <br> <button class="login-button" id="send">Sign In</button><br>
+        </div>
+        <div class="container-remember">
+            <div class="remember">
+                <span><input type="checkbox"></span>
+                <label for="checkbox" class="label-remember">Remember me</label>
+            </div>
+
+            <div>
+                <a href="https://www.netflix.com/it-en/LoginHelp" class="help">Need help?</a>
+            </div>
+        </div>
+        <footer>
+            <div class="links">
+                <h5>New to Netflix? <a href="">Sign up now</a></h5>
+                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="">Learn more.</a></p>
+            </div>
+        </footer>
+    </form>
 </body>
 
 </html>
