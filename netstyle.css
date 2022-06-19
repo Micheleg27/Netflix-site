@@ -22,6 +22,10 @@
     margin-right: 150px;
 }
 
+#kids-container-card {
+    border-top: 7px solid gray;
+}
+
 
 /* Paragrafi e div del grid */
 
@@ -91,3 +95,43 @@
     text-decoration: underline;
     color: gray;
 }
+
+/* Input e-mail */
+
+#submit-email {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 180px;
+    border-bottom: 7px solid gray;
+}
+
+#email-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;   
+}
+
+.buttonstart{
+    width: 120px;
+    height: 56px;
+    background-color: red;
+    color: white;
+    font-size: 36px;
+    border-radius: 0px 5px 5px 0px;
+    text-align: center;
+    }
+    
+    
+    .inputemail{
+    width: 500px;
+    height: 50px;
+    }
+
+    #h1-email {
+        font-size: 20px;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
