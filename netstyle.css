@@ -1,3 +1,17 @@
+/* Font */
+
+@font-face {
+    font-family: "bebas-neue";
+    src: url(./fontzzz/NetflixSans-Regular.otf)
+}
+
+/* Impostazioni generali */
+
+* {
+    font-family: "bebas-neue";
+    font-size: 14px;
+}
+
 body,html{
     height: 100%;}
 
@@ -7,11 +21,7 @@ body,html{
 background-size: cover;
 display: flex;
 flex-direction: column;
-
-
-
 }
-
 
 
 .scritte-home{
@@ -19,13 +29,11 @@ color: white;
 text-align: center;}
 
 .emailflex{
-
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
 }
-
 
 
 .upperflex{
@@ -91,3 +99,127 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 align-content: center;
+
+#footer {
+    background-color: black;
+    height: 650px;
+}
+
+#container-grid {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#kids-container-card {
+    border-top: 7px solid gray;
+}
+
+
+/* Paragrafi e div del grid */
+
+#grid-centrale {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr auto;
+}
+
+#pfooter1, #pfooter2 {
+    color: gray;
+    width: 280px;
+    margin: 25px;
+}
+
+
+#pfooter1 {
+    font-size: 1.2em;
+    grid-row: 1;
+}
+
+#dfooter {
+    height: auto;
+    width: 175px;
+    color: gray;
+    margin: 25px;
+}
+
+
+/* Div select lingua */
+
+#div-lang {
+    width: auto;
+    height: auto;
+}
+
+#language {
+    background-color:black;
+    color: gray;
+    height: 45px;
+    width: 130px;
+    background-image: url(./Schermata\ 2022-06-09\ alle\ 10.12.39.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    margin: 25px;
+}
+
+#lang-1, #lang-2 {
+    text-align: right;
+    justify-items: right;
+}
+
+/* Sistemazione stile dei link */
+
+#dfooter>a:link {
+    text-decoration: none;
+    color: gray;
+}
+
+#dfooter>a:active, .dfooter>a:visited, .dfooter>a:focus {
+    text-decoration: none;
+    color: gray;
+}
+
+#dfooter>a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+/* Input e-mail */
+
+#submit-email {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 180px;
+    border-bottom: 7px solid gray;
+}
+
+#email-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;   
+}
+
+.buttonstart{
+    width: 120px;
+    height: 56px;
+    background-color: red;
+    color: white;
+    font-size: 36px;
+    border-radius: 0px 5px 5px 0px;
+    text-align: center;
+    }
+    
+    
+    .inputemail{
+    width: 500px;
+    height: 50px;
+    }
+
+    #h1-email {
+        font-size: 20px;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
