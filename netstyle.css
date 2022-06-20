@@ -12,6 +12,94 @@
     font-size: 14px;
 }
 
+body,html{
+    height: 100%;}
+
+.sfondo {
+    height: 100%;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/25badb14-858b-4b1c-8b7d-2244098454d9/029f23d0-f529-4e95-9816-e68f1a64d36d/IT-it-20220606-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+background-size: cover;
+display: flex;
+flex-direction: column;
+}
+
+
+.scritte-home{
+color: white;
+text-align: center;}
+
+.emailflex{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+
+.upperflex{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+justify-content: space-between;
+margin: 10px;
+}
+
+.upperflexright{
+display: flex;
+flex-direction: row;
+gap: 20px;
+
+margin-right: 20px;
+
+}
+
+.accedi{
+    width: 80px;
+height: 40px;
+border-radius:10%;
+    font-size: 20px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+background-color: red;
+text-decoration: none;
+color: white;
+
+
+}
+
+.lingua{
+    color: white;
+    background-color: black;
+    width: 80px;
+    height: 40px;
+    border-radius: 10%;
+}
+
+    
+.buttonstart{
+width: 120px;
+height: 76px;
+background-color: red;
+color: white;
+font-size: 20px;
+}
+
+
+.inputemail{
+width: 500px;
+height: 70px;
+}
+
+.centerflex{
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+
 #footer {
     background-color: black;
     height: 650px;
