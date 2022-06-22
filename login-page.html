@@ -14,42 +14,45 @@
 <body class="page-background">
 
     <header class="header">
-        <div class="ball">
+        <div class="logo">
             <a href="#"><img src="./img/netflix-logo-0.png" id="logo" alt="netflix logo"></a>
         </div>
     </header>
+    <div id="container-form">
+        <form class="form">
+            <div class="title">
+                <h1>Sign In</h1>
+            </div>
+            <div class="input">
+                <input type="email" class="utente" id="user" placeholder="Email or phone number"
+                    title="Please enter a valid email or phone number." required> <br>
 
-    <form class="form">
-        <div class="title">
-            <h1>Sign In</h1>
-        </div>
-        <div class="input">
-            <input type="email" class="utente" id="user" placeholder="Email or phone number"
-                title="Please enter a valid email or phone number." required> <br>
 
+                <br> <input type="password" class="psw" id="key" placeholder="Password" pattern=".{4,60}"
+                    title="Your password must contain between 4 and 60 characters." required> <br>
 
-            <br> <input type="password" class="psw" id="key" placeholder="Password" pattern=".{4,60}"
-                title="Your password must contain between 4 and 60 characters." required> <br>
+                <br> <button class="login-button" id="send">Sign In</button><br>
+            </div>
+            <div class="container-remember">
+                <div class="remember">
+                    <span><input id="check" type="checkbox"></span>
+                    <label for="checkbox" id="label-remember">Remember me</label>
+                </div>
 
-            <br> <button class="login-button" id="send">Sign In</button><br>
-        </div>
-        <div class="container-remember">
-            <div class="remember">
-                <span><input type="checkbox"></span>
-                <label for="checkbox" class="label-remember">Remember me</label>
+                <div class="help-container">
+                    <a class="help" href="https://www.netflix.com/it-en/LoginHelp">Need help?</a>
+                </div>
             </div>
 
-            <div>
-                <a href="https://www.netflix.com/it-en/LoginHelp" class="help">Need help?</a>
-            </div>
-        </div>
-        <footer>
-            <div class="links">
-                <h5>New to Netflix? <a href="">Sign up now</a></h5>
-                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="">Learn more.</a></p>
-            </div>
-        </footer>
-    </form>
+            <footer>
+                <div class="links">
+                    <h5>New to Netflix? <a href="">Sign up now</a></h5>
+                    <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="">Learn
+                            more.</a></p>
+                </div>
+            </footer>
+        </form>
+    </div>
 </body>
 
 </html>
