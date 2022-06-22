@@ -1,0 +1,146 @@
+body {
+    background: black;
+    
+}
+
+.kids-animation-card {
+    margin: 0;
+    background: black;
+    height: 530px;
+    width: 1700px; 
+    border-top: 8px solid #222 ;
+    border-bottom: 8px solid #222;
+}
+
+.kids-animation-card-container {
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 45px;
+}
+    
+
+.kids-card-text {
+    -webkit-text-size-adjust: 100%;
+    font-size: 18px;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    position: relative;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+    padding-left: 19px;
+}
+
+h1 {
+    display: block;
+    font-size: 2.7em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: lighter;
+}
+  
+img {
+    max-width: 80%;
+    height: auto;
+    border: 0;
+    float: right;
+}
+
+.faq-card .faq-list{
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-align: center;
+    margin: 1.25em auto;
+    max-width: 815px;
+    display: block;
+    text-align: left;
+}
+
+
+.faq-card-text {
+    color: #fff;
+}
+
+.faq-card-title {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-align: center;
+    font-size: 47px;
+    margin: 1.5em 0 1em 0;
+}
+
+ul {
+    display: block;
+    list-style-type:disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style: none;
+}
+
+ul>li {
+    margin-left: 1.1em;
+    margin-bottom: 9px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    background-color: rgb(49, 49, 49);
+}
+
+.faq-question {
+    color:#fff ;
+    background-color:rgb(49, 49, 49);
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    margin-bottom: 1px;
+    font-weight: 500;
+    position: relative;
+    border: 0;
+    font-size: 26px;
+}
+
+button {
+    -webkit-appearance: button;
+    cursor: pointer;
+    text-transform: none;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+
+.faq-card .svg-icon-thin-x {
+    position: absolute;
+    
+
+    height: 1em;
+    width: 1em;
+    fill: rgb(255, 255, 255);
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.faq-card .faq-answer.closed {
+    max-height: 0;
+    overflow: hidden;
+}
+    
