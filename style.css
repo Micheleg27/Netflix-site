@@ -3,6 +3,10 @@ body {
     
 }
 
+#kids-container-card {
+    border-top: 7px solid gray;
+}
+
 .kids-animation-card {
     margin: 0;
     background: black;
