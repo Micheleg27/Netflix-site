@@ -26,6 +26,7 @@ html {
     background-image: url(img/IT-en-20220606-popsignuptwoweeks-perspective_alpha_website_large.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 
@@ -157,22 +158,20 @@ p > a {
 
     color: #0071eb;
 }
-footer {
+#new-netflix {
 
 margin-top: 50px;
 
 }
 
-/* Div totale di tutto il footer */
-#bigdiv {
-    padding: 20px;
-}
+/* Footer */
 
-/* Impostazioni dimensioni e colore testo dei div */
 
-#footer {
+footer {
     background-color: black;
     font-family: "bebas-neue";
+    width: 100vw;
+    margin-top: 60px;
 }
 
 /* Paragrafi e div del grid */
@@ -184,10 +183,6 @@ margin-top: 50px;
     margin-top: 15px;
     margin-left: 125px;
 }
-
-/* .pfooter>#pfooter1 {
-    width: 260px;
-} */
 
 #pfooter1 {
     font-size: 1.2em;
