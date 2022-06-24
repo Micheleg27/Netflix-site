@@ -1,70 +1,98 @@
-/* Font */
+/* CSS MICHELE
 
-@font-face {
-    font-family: "bebas-neue";
-    src: url(./fontzzz/NetflixSans-Regular.otf)
+Media Query */
+
+@media screen and (min-width: 0px) and (max-width: 767.98px) {
+    #submit-email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #email-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .buttonstart {
+        margin-top: 20px;
+        width: 120px;
+        height: 60px;
+        background-color: red;
+        color: white;
+        justify-content: center;
+    }
+
+    .inputemail {
+        margin-left: 30px;
+    }
+
+    #grid-centrale {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr auto;
+    }
+
 }
 
-/* Impostazioni generali body */
+@media screen and (min-width:768px) {
+    #submit-email {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 180px;
+        border-bottom: 7px solid gray;
+    }
+    
+    #email-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "bebas-neue";
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-/* Div totale di tutto il footer */
-#bigdiv {
-    padding: 20px;
-}
-
-/* Margin e padding totali */
-
-/* .container {
-    margin: 5px;
-    padding: 10px;
-} */
-
-/* Impostazioni dimensioni e colore testo dei div */
-
-#footer {
-    background-color: black;
-    font-family: "bebas-neue";
+    #grid-centrale {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr auto;
+    }
+    
 }
 
 /* Paragrafi e div del grid */
 
-#pfooter1, #pfooter2 {
-    color: gray;
-    margin: 5px;
-    padding: 5px;
-    margin-top: 15px;
-    margin-left: 133px;
-    height: auto;
-    width: 280px;
-    justify-self: center;
+#footer {
+    background-color: black;
+    height: 650px;
+    font-size: 12px;
 }
 
-/* .pfooter>#pfooter1 {
-    width: 260px;
-} */
+#container-grid {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#pfooter1,
+#pfooter2 {
+    color: gray;
+    width: 280px;
+    margin: 25px;
+}
+
 
 #pfooter1 {
     font-size: 1.2em;
-    width: 270px;
+    grid-row: 1;
 }
 
-#dfooter {
-    height: auto;
-    width: 180px;
+.dfooter {
+    height: 5px;
+    width: 175px;
     color: gray;
-    margin: 5px;
-    padding: 5px;
-    margin-right: 40px;
-    justify-self: center;
+    margin: 25px;
 }
+
 
 /* Div select lingua */
 
@@ -73,50 +101,80 @@
     height: auto;
 }
 
-#language {
+#select-div {
+    border: 2px solid gray;
     background-color: black;
     color: gray;
     height: 45px;
     width: 130px;
-    background-image: url(./Schermata\ 2022-06-09\ alle\ 10.12.39.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-    margin-left: 120px;
+    margin: 25px;
+    text-align: center;
+    line-height: 45px;
 }
 
-#lang-1, #lang-2 {
-    text-align: right;
-    justify-items: right;
+#language {
+    background-color: black;
+    color: gray;
+    border: none;
+
 }
 
 
-/* Disposizione del grid */ 
-
-#div-menu-grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr auto;
-    grid-template-columns: 1fr 1fr 1fr auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 65px;
-    margin-right: 65px;
-
+.fa-solid,
+.fa-globe {
+    font-size: 1.6em;
+    position: relative;
+    right: 10px;
+    top: 4px;
 }
 
 /* Sistemazione stile dei link */
 
-#dfooter>a:link {
+.dfooter>a:link {
     text-decoration: none;
     color: gray;
 }
 
-#dfooter>a:active, .dfooter>a:visited, .dfooter>a:focus {
+.dfooter>a:active,
+.dfooter>a:visited,
+.dfooter>a:focus {
     text-decoration: none;
     color: gray;
 }
 
-#dfooter>a:hover {
+.dfooter>a:hover {
     text-decoration: underline;
     color: gray;
+}
+
+/* Input e-mail */
+
+.buttonstart {
+    width: 120px;
+    height: 56px;
+    background-color: red;
+    color: white;
+    font-size: 36px;
+    border-radius: 0px 5px 5px 0px red;
+    text-align: center;
+}
+
+
+.inputemail {
+    width: 500px;
+    height: 50px;
+}
+
+#h1-email {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#inizia {
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
 }
