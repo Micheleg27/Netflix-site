@@ -77,12 +77,9 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: red;
     text-decoration: none;
     color: white;
-
-
 }
 
 
@@ -136,10 +133,10 @@ padding: 5px;
     }
 
     .emailflex {
-
         display: flex;
         flex-direction:column;
         align-items:center;
+        gap: 20px;
     }
 
     #scritta1 {
@@ -165,4 +162,463 @@ padding: 5px;
     }
 }
 
-/* End feature/header-- Giuseppe Filannino */
+/* Fine CSS Giuseppe */
+
+body {
+    background: black;
+
+}
+
+#kids-container-card {
+    border-top: 7px solid gray;
+}
+
+.kids-animation-card {
+    margin: 0;
+    background: black;
+    height: 530px;
+    width: 1700px;
+    border-top: 8px solid #222;
+    border-bottom: 8px solid #222;
+}
+
+.kids-animation-card-container {
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 45px;
+}
+
+
+.kids-card-text {
+    -webkit-text-size-adjust: 100%;
+    font-size: 18px;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+    padding-left: 19px;
+}
+
+h1 {
+    display: block;
+    font-size: 2.7em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: lighter;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    border: 0;
+    float: right;
+}
+
+.faq-card .faq-list {
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 1.25em auto;
+    max-width: 815px;
+    display: block;
+    text-align: left;
+}
+
+
+.faq-card-text {
+    color: #fff;
+}
+
+.faq-card-title {
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 47px;
+    margin: 1.5em 0 1em 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style: none;
+}
+
+ul>li {
+    margin-left: 1.1em;
+    margin-bottom: 9px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    background-color: rgb(49, 49, 49);
+}
+
+.faq-question {
+    color: #fff;
+    background-color: rgb(49, 49, 49);
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    margin-bottom: 1px;
+    font-weight: 500;
+    position: relative;
+    border: 0;
+    font-size: 26px;
+}
+
+button {
+    -webkit-appearance: button;
+    cursor: pointer;
+    text-transform: none;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+
+.faq-card .svg-icon-thin-x {
+    position: absolute;
+
+
+    height: 1em;
+    width: 1em;
+    fill: rgb(255, 255, 255);
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.faq-card .faq-answer.closed {
+    max-height: 0;
+    overflow: hidden;
+}
+
+/* CSS MICHELE
+
+Media Query */
+
+@media screen and (min-width: 0px) and (max-width: 767.98px) {
+    #submit-email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #email-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .buttonstart {
+        margin-top: 20px;
+        width: 120px;
+        height: 60px;
+        background-color: red;
+        color: white;
+        justify-content: center;
+    }
+
+    .inputemail2 {
+        margin-left: 30px;
+    }
+
+    #grid-centrale {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr auto;
+        justify-content: center;
+    }
+
+    .pfooter, #select-div {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    #submit-email {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 180px;
+        border-bottom: 7px solid gray;
+    }
+    
+    #email-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #grid-centrale {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr auto;
+    }
+    
+}
+
+/* Paragrafi e div del grid */
+
+#footer {
+    background-color: black;
+    height: 650px;
+    font-size: 12px;
+}
+
+#container-grid {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#pfooter1,
+#pfooter2 {
+    color: gray;
+    width: 280px;
+    margin: 25px;
+}
+
+
+#pfooter1 {
+    font-size: 1.2em;
+    grid-row: 1;
+}
+
+.dfooter {
+    height: 5px;
+    width: 175px;
+    color: gray;
+    margin: 25px;
+}
+
+
+/* Div select lingua */
+
+#div-lang {
+    width: auto;
+    height: auto;
+}
+
+#select-div {
+    border: 2px solid gray;
+    background-color: black;
+    color: gray;
+    height: 45px;
+    width: 130px;
+    margin: 25px;
+    text-align: center;
+    line-height: 45px;
+}
+
+#language {
+    background-color: black;
+    color: gray;
+    border: none;
+
+}
+
+
+.fa-solid,
+.fa-globe {
+    font-size: 1.6em;
+    position: relative;
+    right: 10px;
+    top: 4px;
+}
+
+/* Sistemazione stile dei link */
+
+.dfooter>a:link {
+    text-decoration: none;
+    color: gray;
+}
+
+.dfooter>a:active,
+.dfooter>a:visited,
+.dfooter>a:focus {
+    text-decoration: none;
+    color: gray;
+}
+
+.dfooter>a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+/* Input e-mail */
+
+.buttonstart {
+    width: 120px;
+    height: 56px;
+    background-color: red;
+    color: white;
+    font-size: 36px;
+    border-radius: 0px 5px 5px 0px red;
+    text-align: center;
+}
+
+
+.inputemail2 {
+    width: 500px;
+    height: 50px;
+}
+
+#h1-email {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#inizia {
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.sezione {
+    border-top: 8px solid #222;
+    border-bottom: 3px solid #222;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+#download {
+    background-color: black;
+    color: white;
+    font-family: "Arial";
+    font-weight: bold;
+    bottom: -245px;
+    left: 310px;
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-width: 2.5px;
+    border-color: rgb(61, 61, 61);
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    height: 90px;
+    width: 300px;
+}
+
+h1 {
+    color: white;
+    font-family: "Arial";
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+h2 {
+    color: white;
+    font-family: "Arial";
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: lighter;
+}
+
+#immagine2 {
+    position: relative;
+    left: -60px;
+    width: 1000px;
+    padding-right: 50px;
+    padding-left: 0px;
+}
+
+#immagine3 {
+    height: 80px;
+    padding-right: 20px;
+}
+
+#immagine1 {
+    width: 1300px;
+}
+
+/* CSS GIADA */
+
+.container-flex {
+    display: flex;
+    align-content: space-between;
+    background-color: black;
+    padding: 30px;
+}
+
+h1{
+    font-size: 40px;
+    margin: 2px;
+    font-family: "bebas-neue";
+    color: #f3f3f3;
+    position: relative;
+    padding: 20px;
+    line-height: 1.1;
+}
+
+
+h2{
+    font-size: 21px;
+    font-family: "bebas-neue";
+    color: #f3f3f3;
+    margin: 2px;
+    padding-left: 20px;
+    width: 400px;
+}
+
+/*-------*/
+@media only screen and (max-width:768px) {
+
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.immagine{
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
+    max-width: 100%;
+    min-width: 100%;
+}
+}
