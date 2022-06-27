@@ -11,7 +11,6 @@
     margin: 0;
     padding: 0;
     font-family: "bebas-neue";
-    font-size: 14px;
 }
 
 body,
@@ -26,16 +25,22 @@ html {
 
 #page-background {
     display: flex;
-    /* background-image: url(img/IT-en-20220606-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url(img/IT-en-20220606-popsignuptwoweeks-perspective_alpha_website_large.jpg);
     background-size: cover;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     height: 100%;
 }
 
 
 .header {
-    padding: 20px 50px;
-    position: relative;
+    /* padding: 20px 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 15px;
 }
 
 .logo {
@@ -52,22 +57,25 @@ html {
     margin: 10px;
     padding: 10px;
 }
+ .container-form {
+   
+ }
 
+  
 
 .form {
     display: flex;
     background-color: rgba(0, 0, 0, .75);
     flex-direction: column;
     border-radius: 10px;
-    transform: translateX(55%);
     height: 660px;
     width: 450px;
     padding: 60px 68px 40px;
     position: relative;
     box-sizing: border-box;
-    margin-top: 100px;
-    
- 
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 h1 {
@@ -125,25 +133,33 @@ h1 {
 .container-remember {
 
     display: flex;
+    align-items: center;
     justify-content: space-between;
     color: #b3b3b3;
     font-size: 13px;
     font-weight: 500;
 }
 
+.check {
+    width: 21.6px;
+    height: 18px;
+}
+
 .help {
     color: #b3b3b3;
     font-size: 13px;
-    
+
 }
 
 .links {
-  
+
     margin-top: 11px;
     font-size: 13px;
     color: #8c8c8c;
-} 
-h5, a {
+}
+
+h5,
+a {
     color: #737373;
     font-size: 16px;
     font-weight: 500;
@@ -152,18 +168,19 @@ h5, a {
 
 }
 
-h5> a {
+h5>a {
 
-    color:  #fff;
+    color: #fff;
 }
 
-p > a {
+p>a {
 
     color: #0071eb;
 }
+
 #new-netflix {
 
-margin-top: 50px;
+    margin-top: 50px;
 
 }
 
@@ -222,16 +239,13 @@ footer {
     border: none;
 }
 
-.fa-solid,
-.fa-globe {
-    font-size: 1.6em;
-    position: relative;
-    right: 10px;
-    top: 4px;
-    color: gray;
+#lang-1,
+#lang-2 {
+    text-align: right;
+    justify-items: right;
 }
 
-/* Disposizione del grid */ 
+/* Disposizione del grid */
 
 #container {
     display: grid;
@@ -253,7 +267,9 @@ a {
     color: gray;
 }
 
-.dfooter>a:active, .dfooter>a:visited, .dfooter>a:focus {
+.dfooter>a:active,
+.dfooter>a:visited,
+.dfooter>a:focus {
     text-decoration: none;
     color: gray;
 }
