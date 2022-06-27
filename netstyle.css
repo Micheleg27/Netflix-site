@@ -289,6 +289,14 @@ Media Query */
         display: grid;
         grid-template-columns: 1fr auto;
         grid-template-rows: 1fr 1fr 1fr 1fr auto;
+        justify-content: center;
+    }
+
+    .pfooter, #select-div {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: left;
+        justify-content: flex-start;
     }
 
 }

@@ -16,16 +16,19 @@
 
 body,
 html {
+    background-image: url(img/IT-en-20220606-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
     height: 100vh;
     width: 100%;
 }
 
-.page-background {
+#page-background {
     display: flex;
-    background-image: url(img/IT-en-20220606-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    /* background-image: url(img/IT-en-20220606-popsignuptwoweeks-perspective_alpha_website_large.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     height: 100%;
 }
 
@@ -168,45 +171,31 @@ margin-top: 50px;
 
 
 footer {
-    background-color: black;
+    background-color: rgba(0, 0, 0, .75);
     font-family: "bebas-neue";
     width: 100vw;
-    margin-top: 60px;
+    height: 250px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /* Paragrafi e div del grid */
 
 .pfooter {
+    margin-left: 200px;
     color: gray;
-    margin: 5px;
-    padding: 5px;
-    margin-top: 15px;
-    margin-left: 125px;
 }
 
 #pfooter1 {
     font-size: 1.2em;
-    width: 260px;
+    width: 350px;
 }
 
 .dfooter {
+    margin-left: 200px;
     height: auto;
-    width: 180px;
+    width: 60px;
     color: gray;
-    margin: 5px;
-    padding: 5px;
-    margin-right: 40px;
-    justify-self: center;
-}
-
-.dfooter {
-    height: auto;
-    width: 180px;
-    color: gray;
-    margin: 5px;
-    padding: 5px;
-    margin-right: 40px;
-    justify-self: center;
 }
 
 .pdivs {
@@ -217,26 +206,29 @@ footer {
 
 /* Div select lingua */
 
-#div-lang {
-    width: auto;
-    height: auto;
+#select-div {
+    border: 2px solid gray;
+    background-color: rgba(0, 0, 0, .75);
+    height: 45px;
+    width: 130px;
+    text-align: center;
+    line-height: 45px;
+    margin-left: 200px;
 }
 
 #language {
-    background-color: black;
+    background-color: rgba(0, 0, 0, .75);
     color: gray;
-    height: 45px;
-    width: 125px;
-    background-image: url(./Schermata\ 2022-06-09\ alle\ 10.12.39.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-    margin-left: 130px;
+    border: none;
 }
 
-#lang-1, #lang-2 {
-    text-align: right;
-    justify-items: right;
+.fa-solid,
+.fa-globe {
+    font-size: 1.6em;
+    position: relative;
+    right: 10px;
+    top: 4px;
+    color: gray;
 }
 
 /* Disposizione del grid */ 
@@ -245,13 +237,16 @@ footer {
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr 1fr 1fr auto;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    margin-left: 65px;
-    margin-right: 65px;
+    width: 400px;
 }
 
 /* Sistemazione stile dei link */
+
+a {
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+}
 
 .dfooter>a:link {
     text-decoration: none;

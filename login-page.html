@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,15 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix login</title>
     <link rel="stylesheet" href="./logincss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
-<body class="page-background">
-
-    <header class="header">
-        <div class="logo">
-            <a href="#"><img src="./img/netflix-logo-0.png" id="logo" alt="netflix logo"></a>
-        </div>
+<body>
+    <div id="page-background">
+        <header class="header">
+            <div class="logo">
+                <a href="#"><img src="./img/netflix-logo-0.png" id="logo" alt="netflix logo"></a>
+            </div>
     </header>
     <div id="container-form">
         <form class="form">
@@ -52,6 +54,8 @@
                 </div>
             </div>
         </form>
+    </div>
+</div>
 
         <footer>
                 <div class="pdivs" id="p1div">
@@ -67,7 +71,7 @@
                 <div class="dfooter"><a href="https://help.netflix.com/legal/corpinfo">Informazioni sull'azienda</a></div>
             </div>
 
-            <div id="div-lang">
+            <div id="select-div"><i class="fa solid fa-globe"></i>
                 <select name="language" id="language">
                     <option value="ita" id="lang-1" selected>Italiano</option>
                     <option value="eng" id="lang-2">Inglese</option>
