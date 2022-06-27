@@ -1,94 +1,169 @@
-body,html{
-    height: 100%;}
-    
+/* feature/header-- Giuseppe Filannino */
 
-.sfondo {
+body,
+html {
     height: 100%;
-    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/25badb14-858b-4b1c-8b7d-2244098454d9/029f23d0-f529-4e95-9816-e68f1a64d36d/IT-it-20220606-popsignuptwoweeks-perspective_alpha_website_small.jpg);
-background-size: cover;
-display: flex;
-flex-direction: column;
+    font-family: "bebas-neue";
+    margin: 0;
+}
 
 
+@font-face {
+    font-family: "bebas-neue";
+    src: url(./fontzzz/NetflixSans-Regular.otf)
+}
+
+
+#scritta1 {
+    font-size: 8vh;
+}
+
+#scritta2 {
+    font-size: 4vh;
+}
+
+.immaginesfondo {
+    height: 100%;
+    background-size: cover;
+    background-image: radial-gradient(rgba(2, 2, 21, 0.5), rgba(11, 11, 0, 0.5)),
+        url("./background-image.jpg");
 
 }
 
 
-
-.scritte-home{
-color: white;
-text-align: center;}
-
-.emailflex{
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-}
-
-
-
-.upperflex{
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-justify-content: space-between;
-margin: 10px;
-}
-
-.upperflexright{
-display: flex;
-flex-direction: row;
-gap: 20px;
-
-margin-right: 20px;
-
-}
-
-.accedi{
-    width: 80px;
-height: 40px;
-border-radius:10%;
-    font-size: 20px;
+.mainflex {
+    height: 100%;
     display: flex;
-  justify-content: center;
-  align-items: center;
- 
-background-color: red;
-text-decoration: none;
-color: white;
+    flex-direction: column;
+}
+
+.scritte-home {
+    color: white;
+    text-align: center;
+}
+
+.emailflex {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.upperflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.upperflexright {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    margin-right: 20px;
+
+}
+
+.accedi {
+    width: 80px;
+    height: 35px;
+    border-radius: 10%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: red;
+    text-decoration: none;
+    color: white;
 
 
 }
 
-.lingua{
+
+
+.lingua {
+padding: 5px;
     color: white;
     background-color: black;
     width: 80px;
-    height: 40px;
+    height: 35px;
     border-radius: 10%;
 }
 
-    
-.buttonstart{
-width: 120px;
-height: 76px;
-background-color: red;
-color: white;
-font-size: 20px;
+
+.buttoninizia {
+    width: 120px;
+    height: 76px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
 }
 
 
-.inputemail{
-width: 500px;
-height: 70px;
+.inputemail {
+    width: 500px;
+    height: 70px;
 }
 
-.centerflex{
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center;
+.centerflex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+@media screen and (max-width:768px) {
+
+    body,
+    html {
+        height: 100%;
+    }
+
+    .sfondo {
+        height: 100%;
+        background-image: url(./background-image.jpg);
+        background-size: cover;
+        display: flex;
+    }
+
+    .emailflex {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #scritta1 {
+        font-size: 5vh;
+    }
+
+    #scritta2 {
+        font-size: 3vh;
+    }
+
+    #scritta3 {
+        font-size: 3vh;
+    }
+
+    .inputemail {
+        width: 400px;
+        height: 60px;
+    }
+
+    .buttoninizia {
+        width: 100px;
+        height: 60px;
+    }
+
+
+/* End feature/header-- Giuseppe Filannino */
