@@ -97,12 +97,12 @@ padding: 5px;
 }
 
 
-.buttoninizia {
+.buttoninizia{
     width: 120px;
     height: 76px;
     background-color: red;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -138,9 +138,8 @@ padding: 5px;
     .emailflex {
 
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-direction:column;
+        align-items:center;
     }
 
     #scritta1 {
@@ -164,6 +163,6 @@ padding: 5px;
         width: 100px;
         height: 60px;
     }
-
+}
 
 /* End feature/header-- Giuseppe Filannino */
