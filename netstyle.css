@@ -361,6 +361,12 @@ Media Query */
 
 @media screen and (min-width: 0px) and (max-width: 767.98px) {
 
+    #footer {
+        background-color: black;
+        height: 500px;
+        font-size: 13px;
+    }
+
     #submit-email {
         display: flex;
         flex-direction: column;
@@ -409,6 +415,7 @@ Media Query */
     #container-grid {
         justify-content: flex-start;
         margin: 25px;
+        margin-bottom: 35px;
     }
 
     #grid-centrale {
@@ -417,9 +424,23 @@ Media Query */
         grid-template-rows: 1fr 1fr 1fr 1fr auto;
     }
 
+    #pfooter1,
+#pfooter2 {
+    color: gray;
+    width: 280px;
+    margin: 15px;
+}
+
+
 }
 
 @media screen and (min-width:768px) {
+
+    #footer {
+        background-color: black;
+        height: 400px;
+        font-size: 13px;
+    }
 
     #submit-email {
         margin-top: 10px;
@@ -470,30 +491,24 @@ Media Query */
 
     #container-grid {
         margin-top: 50px;
-        margin-left: 220px;
+        margin-left: 70px;
         height: 310px;
         min-width: 450px;
         max-width: 650px;
     }
 
-}
-
-/* Impostazioni generali footer  */
-
-#footer {
-    background-color: black;
-    height: 400px;
-    font-size: 13px;
-}
-
-/* Paragrafi e div del grid */
-
-#pfooter1,
+    #pfooter1,
 #pfooter2 {
     color: gray;
     width: 280px;
     margin: 15px;
 }
+
+}
+
+/* Paragrafi e div del grid */
+
+
 
 
 #pfooter1 {
