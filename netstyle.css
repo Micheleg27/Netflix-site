@@ -120,6 +120,7 @@ width: 200px;}
     background-color: red;
     color: white;
     font-size: 25px;
+    margin-bottom: 9px;
 }
 
 .globeflex{
@@ -196,6 +197,11 @@ width: 200px;}
 
         .scritta-netflix{
         width: 150px;}
+
+        .fa-angle-right {
+            margin-left: 4px;
+            width: 3px;
+        }
 
 }
 
