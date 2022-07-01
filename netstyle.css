@@ -137,7 +137,7 @@ align-content: center;
     grid-row: 1;
 }
 
-#dfooter {
+.dfooter {
     height: 5px;
     width: 175px;
     color: gray;
@@ -152,36 +152,45 @@ align-content: center;
     height: auto;
 }
 
-#language {
-    background-color:black;
+#select-div {
+    border: 2px solid gray;
+    background-color: black;
     color: gray;
     height: 45px;
     width: 130px;
-    background-image: url(./Schermata\ 2022-06-09\ alle\ 10.12.39.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
     margin: 25px;
+    text-align: center;
+    line-height: 45px;
 }
 
-#lang-1, #lang-2 {
-    text-align: right;
-    justify-items: right;
+#language {
+    background-color: black;
+    color: gray;
+    border: none;
+
+}
+
+
+.fa-solid, .fa-globe {
+    font-size: 1.6em;
+    position: relative;
+    right: 10px;
+    top: 4px;
 }
 
 /* Sistemazione stile dei link */
 
-#dfooter>a:link {
+.dfooter>a:link {
     text-decoration: none;
     color: gray;
 }
 
-#dfooter>a:active, .dfooter>a:visited, .dfooter>a:focus {
+.dfooter>a:active, .dfooter>a:visited, .dfooter>a:focus {
     text-decoration: none;
     color: gray;
 }
 
-#dfooter>a:hover {
+.dfooter>a:hover {
     text-decoration: underline;
     color: gray;
 }
