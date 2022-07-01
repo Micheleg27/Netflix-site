@@ -236,25 +236,57 @@ align-content: center;
 
 
 
-
-
-
+    
+  /* parte di clara */
     
   
-    
+  @media (max-width: 950px) {
+    .sezione {
+        flex-direction: column;
+    }
+    #container-testo1 {
+        margin: auto;
+        padding: 75px;
+    }
+  }
+  
     
     .sezione {
-        border-top: 8px solid #222 ;
+        border-top: 8px solid #222;
         border-bottom: 3px solid #222;
         background-color: black;
         display: flex;
       text-align: center;
       align-items: center;
       justify-content: center;
-      padding-left: 200px;
-      padding-right: 200px;
-      padding-top: 35px;
-      padding-bottom: 30px;
+      box-sizing: border-box;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 500px;
+    }
+
+    #container-testo1 {
+      width: 555px;
+      margin-left: auto;
+      padding-left: 75px;
+    }
+
+    #background-image {
+        background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 450px;
+        height: 450px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #container-testo2 {
+        width: 555px;
+        margin-left: 50px;
     }
     
     #download {
@@ -262,9 +294,7 @@ align-content: center;
         color: white;
         font-family: "Arial";
         font-weight: bold;
-        bottom: -245px;
-        left: 310px;
-        position: absolute;
+        position: relative;
         display: flex;
         justify-content: left;
         align-items: center;
@@ -272,11 +302,31 @@ align-content: center;
         border-color: rgb(61, 61, 61);
         border-radius: 10px;
         border-style: solid;
-        padding: 10px;
         padding-bottom: 2px;
         padding-left: 10px;
         height: 90px;
         width: 300px;
+        margin-bottom: 130px;
+    }
+
+    #download-text1 {
+        font-size: 15px;
+        line-height: 2px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #download-text2 {
+
+        color: rgb(0, 98, 173);
+        font-size: 13px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #download-gif {
+        width: 20%;
+        margin: auto;
     }
     
     h1 {
@@ -309,9 +359,14 @@ align-content: center;
     padding-right: 20px;
     }
     
+    #container-immagine1 {
+        width: 600px;
+        margin-right: auto;
+    }
+
     #immagine1 {
-        width: 1300px;
+        width: 100%;
     }
     
     
-    
+    /* fine parte di clara */
