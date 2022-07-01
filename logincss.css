@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "bebas-neue";
-    src: url(./fontzzz/NetflixSans-Regular.otf)
+    src: url(./fontzzz/NetflixSans-Light.otf)
 }
 
 /* Impostazioni generali body */
@@ -11,58 +11,248 @@
     margin: 0;
     padding: 0;
     font-family: "bebas-neue";
-    font-size: 14px;
 }
 
-/* Div totale di tutto il footer */
-#bigdiv {
-    padding: 20px;
+body,
+html {
+    background-image: url(img/IT-en-20220606-popsignuptwoweeks-perspective_alpha_website_large.jpg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: 100%;
 }
 
-/* Impostazioni dimensioni e colore testo dei div */
+.page-background {
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/IT-en-20220606-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-#footer {
-    background-color: black;
+
+.header {
+    /* padding: 20px 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 15px;
+}
+
+.logo {
+    width: auto;
+    height: 70px;
+    border-radius: 50px;
+    float: left;
+}
+
+#logo {
+
+    height: 52px;
+    width: 163px;
+    margin: 10px;
+    padding: 10px;
+}
+ /* .container-form {
+   
+ } */
+
+  
+
+.form {
+    display: flex;
+    background-color: rgba(0, 0, 0, .75);
+    flex-direction: column;
+    border-radius: 10px;
+    height: 660px;
+    width: 450px;
+    padding: 60px 68px 40px;
+    position: relative;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 120px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+
+.login-button {
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 0 12px;
+    background: #e50914;
+    border: 1px #e50914;
+    text-align: center;
+}
+
+
+.utente,
+.psw,
+.login-button {
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    background: #333;
+    box-shadow: none;
+    border-radius: 4px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 15px;
+}
+
+#send {
+
+    background-color: #e50914;
+    padding: 0;
+}
+
+.container-remember {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.check {
+    width: 21.6px;
+    height: 18px;
+}
+
+.help {
+    color: #b3b3b3;
+    font-size: 13px;
+
+}
+
+.links {
+
+    margin-top: 11px;
+    font-size: 13px;
+    color: #8c8c8c;
+}
+
+h5,
+a {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+    text-decoration: none;
+
+}
+
+h5>a {
+
+    color: #fff;
+}
+
+p>a {
+
+    color: #0071eb;
+}
+
+#new-netflix {
+
+    margin-top: 50px;
+
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 739.98) {
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #container {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr 1fr auto;
+    }
+
+}
+
+@media screen and (min-width: 739.99px) {
+
+    #container {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr 1fr 1fr auto;
+        max-width: 70vw;
+    }
+
+    footer {
+        background-color: rgba(0, 0, 0, .95);
+        font-family: "bebas-neue";
+        width: auto;
+        height: 250px;
+    }
+
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(0, 0, 0, .95);
     font-family: "bebas-neue";
+    width: 100vw;
+    height: 320px;
+    margin-right: auto;
+}
+
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 250px;
 }
 
 /* Paragrafi e div del grid */
 
 .pfooter {
     color: gray;
-    margin: 5px;
-    padding: 5px;
-    margin-top: 15px;
-    margin-left: 125px;
 }
-
-/* .pfooter>#pfooter1 {
-    width: 260px;
-} */
 
 #pfooter1 {
     font-size: 1.2em;
-    width: 260px;
+    width: 350px;
+    margin: 15px 15px 15px 9px;
 }
 
 .dfooter {
     height: auto;
-    width: 180px;
+    width: 200px;
     color: gray;
-    margin: 5px;
-    padding: 5px;
-    margin-right: 40px;
-    justify-self: center;
-}
-
-.dfooter {
-    height: auto;
-    width: 180px;
-    color: gray;
-    margin: 5px;
-    padding: 5px;
-    margin-right: 40px;
-    justify-self: center;
+    margin: 10px;
 }
 
 .pdivs {
@@ -73,48 +263,53 @@
 
 /* Div select lingua */
 
-#div-lang {
-    width: auto;
-    height: auto;
+#select-div {
+    border: 0.5px solid gray;
+    background-color: rgba(0, 0, 0, .95);
+    height: 45px;
+    width: 130px;
+    text-align: center;
+    line-height: 45px;
+    margin: 15px 15px 15px 9px;
 }
 
 #language {
-    background-color: black;
+    background-color: rgba(0, 0, 0, .95);
     color: gray;
-    height: 45px;
-    width: 125px;
-    background-image: url(./Schermata\ 2022-06-09\ alle\ 10.12.39.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-    margin-left: 130px;
+    border: none;
 }
 
-#lang-1, #lang-2 {
+#lang-1,
+#lang-2 {
     text-align: right;
     justify-items: right;
 }
 
-/* Disposizione del grid */ 
-
-#container {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr 1fr 1fr auto;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    margin-left: 65px;
-    margin-right: 65px;
+.fa-solid , .fa-globe {
+    color: gray;
+    margin-right: 15px;
 }
 
+/* Disposizione del grid */
+
+
+
 /* Sistemazione stile dei link */
+
+a {
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+}
 
 .dfooter>a:link {
     text-decoration: none;
     color: gray;
 }
 
-.dfooter>a:active, .dfooter>a:visited, .dfooter>a:focus {
+.dfooter>a:active,
+.dfooter>a:visited,
+.dfooter>a:focus {
     text-decoration: none;
     color: gray;
 }

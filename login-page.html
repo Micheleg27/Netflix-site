@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix login</title>
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./logincss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="https://cdn.icon-icons.com/icons2/2699/PNG/512/netflix_logo_icon_170919.png" src="./img/net-favicon.png">
 </head>
+
+
 <body>
-    
+    <div class="page-background">
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="./img/netflix-logo-0.png" id="logo" alt="netflix logo"></a>
+        </div>
+    </header>
+    <div class="container-form">
+        <form class="form">
+            <div class="title">
+                <h1>Sign In</h1>
+            </div>
+            <div class="input">
+                <input type="email" class="utente" id="user" placeholder="Email or phone number"
+                    title="Please enter a valid email or phone number." required> <br>
+
+
+                <br> <input type="password" class="psw" id="key" placeholder="Password" pattern=".{4,60}"
+                    title="Your password must contain between 4 and 60 characters." required> <br>
+
+                <br> <button class="login-button" id="send">Sign In</button><br>
+            </div>
+            <div class="container-remember">
+                <div class="remember">
+                    <span><input class="check" type="checkbox"></span>
+                    <label for="checkbox" id="label-remember">Remember me</label>
+                </div>
+
+                <div class="help-container">
+                    <a class="help" href="https://www.netflix.com/it-en/LoginHelp">Need help?</a>
+                </div>
+            </div>
+
+            <div id="new-netflix">
+                <div class="links">
+                    <h5>New to Netflix? <a href="">Sign up now</a></h5><br>
+                    <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="">Learn
+                            more.</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+        <footer>
+            <div id="flex-container">
+                <div class="pdivs" id="p1div">
+            <p class="pfooter" id="pfooter1">Domande? Chiama 800-130-364</p>
+                </div>    
+
+            <div id="container">
+                <div class="dfooter"><a href="https://help.netflix.com/it/node/412">Domande frequenti</a></div>
+                    <div class="dfooter"><a href="https://help.netflix.com/">Centro assistenza</a></div>
+                        <div class="dfooter"><a href="https://help.netflix.com/legal/termsofuse">Condizioni di utilizzo</a></div>
+                        <div class="dfooter"><a href="https://help.netflix.com/legal/privacy">Privacy</a></div>
+                    <div class="dfooter"><a href="https://www.netflix.com/it-en/#">Preferenze per i cookie</a></div>
+                <div class="dfooter"><a href="https://help.netflix.com/legal/corpinfo">Informazioni sull'azienda</a></div>
+            </div>
+
+            <div id="select-div"><i class="fa solid fa-globe"></i>
+                <select name="language" id="language">
+                    <option value="ita" id="lang-1" selected>Italiano</option>
+                    <option value="eng" id="lang-2">Inglese</option>
+                </select>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
