@@ -82,12 +82,9 @@ width: 200px;}
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: red;
     text-decoration: none;
     color: white;
-
-
 }
 
 
@@ -135,8 +132,7 @@ width: 200px;}
     justify-content: center;
     align-items: center;
     font-size: 20px;
-
-   
+    margin-left: 10px;
 }
 
 
