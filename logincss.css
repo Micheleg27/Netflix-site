@@ -72,7 +72,7 @@ html {
     box-sizing: border-box;
     margin-right: auto;
     margin-left: auto;
-
+    margin-bottom: 120px;
 }
 
 h1 {
@@ -186,12 +186,18 @@ p>a {
 
 @media screen and (max-width: 739.98) {
 
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
     #container {
         display: grid;
         grid-template-rows: 1fr auto;
         grid-template-columns: 1fr 1fr auto;
     }
-    
+
 }
 
 @media screen and (min-width: 739.99px) {
@@ -200,20 +206,28 @@ p>a {
         display: grid;
         grid-template-rows: 1fr auto;
         grid-template-columns: 1fr 1fr 1fr auto;
-        width: 400px;
+        max-width: 70vw;
+    }
+
+    footer {
+        background-color: rgba(0, 0, 0, .95);
+        font-family: "bebas-neue";
+        width: auto;
+        height: 250px;
     }
 
 }
 
 /* Footer */
 
-
 footer {
     background-color: rgba(0, 0, 0, .95);
     font-family: "bebas-neue";
     width: 100vw;
-    height: 250px;
+    height: 320px;
+    margin-right: auto;
 }
+
 
 #flex-container {
     display: flex;
@@ -236,7 +250,7 @@ footer {
 
 .dfooter {
     height: auto;
-    width: 240px;
+    width: 200px;
     color: gray;
     margin: 10px;
 }
