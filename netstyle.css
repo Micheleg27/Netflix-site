@@ -656,6 +656,140 @@ h2 {
     width: 1300px;
 }
 
+  /* parte di clara */
+    
+  
+  @media (max-width: 950px) {
+    .sezione {
+        flex-direction: column;
+    }
+    #container-testo1 {
+        margin: auto;
+        padding: 75px;
+    }
+  }
+  
+    
+    .sezione {
+        border-top: 8px solid #222;
+        border-bottom: 3px solid #222;
+        background-color: black;
+        display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 500px;
+    }
+
+    #container-testo1 {
+      width: 555px;
+      margin-left: auto;
+      padding-left: 75px;
+    }
+
+    #background-image {
+        background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 450px;
+        height: 450px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #container-testo2 {
+        width: 555px;
+        margin-left: 50px;
+    }
+    
+    #download {
+        background-color: black;
+        color: white;
+        font-family: "Arial";
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        border-width: 2.5px;
+        border-color: rgb(61, 61, 61);
+        border-radius: 10px;
+        border-style: solid;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        height: 90px;
+        width: 300px;
+        margin-bottom: 130px;
+    }
+
+    #download-text1 {
+        font-size: 15px;
+        line-height: 2px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #download-text2 {
+
+        color: rgb(0, 98, 173);
+        font-size: 13px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #download-gif {
+        width: 20%;
+        margin: auto;
+    }
+    
+    h1 {
+        color:white;
+    font-family: "Arial";
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: left;
+    
+    }
+    
+    h2 {
+        color:white;
+        font-family: "Arial";
+        font-size: 1.5rem;
+        text-align: left;
+        font-weight: lighter;
+    }
+    
+    #immagine2 {
+        position: relative;
+        left: -60px;
+        width: 1000px;
+        padding-right: 50px;
+        padding-left: 0px;
+    }
+    
+    #immagine3 {
+        height: 80px;
+    padding-right: 20px;
+    }
+    
+    #container-immagine1 {
+        width: 600px;
+        margin-right: auto;
+    }
+
+    #immagine1 {
+        width: 100%;
+    }
+    
+    
+    /* fine parte di clara */
+=======
 /* CSS GIADA */
 
 .container-flex {
